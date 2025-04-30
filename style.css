@@ -9,6 +9,13 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-width: 320px;
+}
+
 h1 { font-size: 22px; }
 h2 { font-size: 18px; }
 p { font-size: 16px; font-weight: 400; }
@@ -166,7 +173,16 @@ p { font-size: 16px; font-weight: 400; }
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+.filters button:hover {
+    background-color: #f2f2f2;
+    border-color: #999999; 
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
 
 .results-count {
     gap: 1rem;
@@ -230,7 +246,7 @@ p { font-size: 16px; font-weight: 400; }
 }
 
 .activites .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -257,9 +273,10 @@ p { font-size: 16px; font-weight: 400; }
 }
 
 .populaires .card:hover,
-.populaires .card:hover img,
-.hebergements .card:hover img {
-    transform: scale(1.05);
+.populaires .card:hover,
+.hebergements .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hebergements .card img { height: 130px; }
