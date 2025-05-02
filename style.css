@@ -412,7 +412,7 @@ footer {
 
     .activites .card img {
         height: auto;
-        max-height: 300px; /* tu peux ajuster si t’as des grosses images */
+        max-height: 300px;
         width: 100%;
     }
 
